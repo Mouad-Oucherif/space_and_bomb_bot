@@ -1,101 +1,81 @@
-# SpaceCrypto And Bombcrypto Bot - MultiScreen
+SpaceCrypto And Bombcrypto Bot - MultiScreen
 This is a open source project inspired on bombcrypto-bot that was a success auto click bot that helped me a lot.
 
 So, I decided to create a new auto click bot for the new NFT game space crypto. (It is not soo easy) I hope you like
 
 To maintain the improvments and this auto click bot free, please help me with any value, have fun :)
 
-Metamask wallet (BNB/SPG/BUSD/BCOIN): 0xa5e1412B4dBf4bE9Fb3f52b12aBFF7A78272B9b3
+Metamask wallet (BNB/SPG/BUSD/BCOIN): 0x6BEFcE1410236680BDbF3c2328138E82A0233655
 
-## Want bot for some game? enter discord and put which game!
+Added extra functions
+Support for multiple accounts on the same monitor
+All functions for bombcrypto
+SpaceCrypto
+Login.
+Refresh when encountering error message
+Put ships to work
+Surrender to the boss you want.
+Resolution: 1920x1080 and 1600x900
 
-## Quer bot para algum jogo? entra no discord e coloque qual jogo!
+1920x1080 accurate is at 100% scale
 
-CANAL DISCORD
-https://discord.gg/4gMA5Nhxrb
+1600x900 accurate is at 150% scale
 
-## Funções extras adicionadas
-
-- Suporte a multiplas contas no mesmo monitor
-- Todas funções para o bombcrypto
-###### SpaceCrypto
-- Fazer login.
-- Refresh ao encontrar a mensagem de error
-- Colocar naves para trabalhar
-- Fazer surrender no boss que desejar.
-
-Resolução: 1920x1080 e 1600x900
-
-1920x1080 precisa está com escala 100%
-
-1600x900 precisa está com escala 150%
-
-
-Não pode ter Pasta ou Qualquer coisa que nao seja os jogos, nome com BombCrypto ou SpaceCrypto.
-
+Cannot have Folder or Anything other than games, name with BombCrypto or SpaceCrypto.
 
 space:
-  ###### ###PT### Tempo para colocar as naves para trabalhar
-  ###### ###EN### Time to put the ships to work
-  refresh_ships: 35
-  ###### Surrender 3 to 12 need alter Images.
-  ###### Default 0, Won't surrender.
-  surrender_boss: 8
-  ###### Add ships 100% = True.
-  fight_100: True
 
-# Instalação:
+###EN### Time to put ships to work
+###EN### Time to put the ships to work
+refresh_ships: 35
 
-1- Baixe e instale Python na versão maior que 3 no [site oficial](https://www.python.org/downloads/) ou através da [windows store](https://www.microsoft.com/p/python-37/9nj46sx7x90p?activetab=pivot:overviewtab).
+Surrender 3 to 12 need alter Images.
+Default 0, Won't surrender.
+surrender_boss: 8
 
-2 - Após instalado python:
+Add ships 100% = True.
+fight_100: True
 
-- Para `windows` _execute como administrador_ o arquivo `run.bat` na pasta principal.
-- Para `linux` o arquivo `run.sh` na pasta principal.
+Installation:
+1- Download and install Python in version greater than 3 from the official website or through the windows store .
 
-# Configurações:
+2 - After installing python:
 
-Você pode configurar algumas opções alterando o arquivo `config.yaml` na pasta principal do bot.
+To windows run the file run.batin the main folder as administrator.
+To linux the file run.shin the main folder.
+Settings:
+You can configure some options by changing the file config.yamlin the bot's main folder.
 
-## `scale_image`
+scale_image
+You are now supported by how many % zoom you are using in your browser.
 
-- Você agora tem suporte de colocar quantos % de zoom está usando em seu navegador.
+Also pay attention to the ZOOM of the Metamask notification window , it must be the same used in the browser.
 
-  > Se atente também ao ZOOM da janela de notificação do _Metamask_, ela deve ser a mesma usada no navegador.
+enable
+When True, activates the functionality of using a different scale. Otherwise, leave the value asFalse
 
-  - ### `enable`
+The value must be: TrueorFalse
 
-    Quando `True`, ativa a funcionalidade de usar um scale diferente. Caso contrário, deixe o valor como `False`
+percent
+The zoom percentage of your browser and the metamask notification window.
 
-    > O valor deve ser: `True` ou `False`
+The Value must be: 50a 100. The lower the value, the more imprecise the bot's detections will be.
 
-  - ### `percent`
-    A porcentagem de zoom do seu navegador e da janela de notificação do metamask.
-    > O Valor deve ser de: `50` a `100`. Quanto menor o valor, mais impreciso serão as detecções do bot.
+is_retina_screen
+If your computer is a mac device with a retina display, you will need to enable this option for the bot to click accurately. If your bot moves the mouse to random places, maybe this option will help you.
+The value must be: Trueto enable, or Falseto disable
 
-## `is_retina_screen`
+mouse_move_speed
+You can configure the speed at which the mouse moves on the screen before clicking.
+The value must be 0.1:1
 
-- Caso seu computador seja um dispositivo mac com tela retina, será necessário ativar essa opção para que o bot realize clicks com precisão. Se seu bot move o mouse para lugares aleatórios, talvez essa opção te ajude.
-  > O valor deve ser: `True` para ativar, ou `False` para desativar
-
-## `mouse_move_speed`
-
-- Você pode configurar a velocidade com que o mouse se move na tela antes da realização do click.
-  > O valor deve ser de: `0.1` a `1`
-
-
-
-# How to works?
+How to works?
 The bot doesn't change any of the game's source code, it just takes a screenshot of the game's screen to find the buttons and simulates mouse movements.
 
-#  Adjusting the bot
+Adjusting the bot
+Why some adjustments might be necessary?
 
-**Why some adjustments might be necessary?**
+The bot uses image recognition to make decisions and move the mouse and click in the right places. It accomplishes this by comparing an example image with a screenshot of the computer/laptop screen. This method is subject to inconsistencies due to differences in your screen resolution and how the game is rendered on your computer. It's likely that the bot doesn't work 100% on the first run, and you need to make some adjustments to the config file.
 
-The bot uses image recognition to make decisions and move the mouse and click in the right places.
-It accomplishes this by comparing an example image with a screenshot of the computer/laptop screen.
-This method is subject to inconsistencies due to differences in your screen resolution and how the game is rendered on your computer.
-It's likely that the bot doesn't work 100% on the first run, and you need to make some adjustments to the config file.
-
-# Image Replacement
+Image Replacement
 The images were taken on my computer with a resolution of 1920x1080. To replace an image that is not being recognized correctly, just find the corresponding image in the "targets" folder for BombCrypto and "img_compare" for SpaceCrypto, take a screenshot of the same area and replace the previous image. It is important that the replacement has the same name, including the .png extension.
